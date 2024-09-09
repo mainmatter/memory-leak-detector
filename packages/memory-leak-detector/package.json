@@ -2,6 +2,7 @@
   "name": "memory-leak-detector",
   "version": "0.1.0",
   "description": "",
+  "repository": "https://github.com/mainmatter/memory-leak-detector",
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js"

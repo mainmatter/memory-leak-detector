@@ -1,11 +1,12 @@
 {
   "name": "root",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": true,
   "description": "",
   "keywords": [],
   "license": "ISC",
   "author": "",
+  "repository": "https://github.com/mainmatter/memory-leak-detector",
   "scripts": {
     "test:memory-leak-ember": "pnpm -F ember-test-app start:memory-leak-detector & pid=$!; pnpm -F ember-test-app test; wait $pid",
     "test:memory-leak-ember-server": "pnpm -F ember-test-app start:memory-leak-detector & pid=$!; pnpm -F ember-test-app test --server; wait $pid"
