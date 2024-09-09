@@ -1,0 +1,3 @@
+{
+  "extends": ["github>mainmatter/renovate-config:ember-addon.json5"]
+}
