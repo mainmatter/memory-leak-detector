@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "memory-leak-detector": {
+      "oldVersion": "0.0.0"
+    }
+  },
+  "description": "## Release (2024-09-09)\n\n\n\n#### :house: Internal\n* [#31](https://github.com/mainmatter/memory-leak-detector/pull/31) Prepare Release ([@github-actions[bot]](https://github.com/apps/github-actions))\n\n#### Committers: 1\n- [@github-actions[bot]](https://github.com/apps/github-actions)\n"
+}
