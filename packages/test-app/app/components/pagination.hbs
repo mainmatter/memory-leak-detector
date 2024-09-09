@@ -1,0 +1,14 @@
+<div class="pagination-container">
+  {{yield this.paginatedRecords to="list"}}
+  <div class="pagination-controls">
+    <button data-test-pagination-previous type="button" {{on "click" this.previousPage}} disabled={{eq this.currentPage 1}}>
+      Previous
+    </button>
+
+    <span>Page {{this.currentPage}} of {{this.totalPages}}</span>
+
+    <button data-test-pagination-next type="button" {{on "click" this.nextPage}} disabled={{eq this.currentPage this.totalPages}}>
+      Next
+    </button>
+  </div>
+</div>

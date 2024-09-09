@@ -1,0 +1,48 @@
+/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr; /* 4 columns of equal width */
+  grid-template-rows: 100px 1fr 1fr 1fr;    /* 4 rows of equal height */
+  gap: 10px; /* Optional: spacing between grid items */
+  height: 100%;
+  width: 100%;
+}
+
+.grid-item-a {
+  grid-row: 1 / 5;  /* Span from row 1 to row 4 (full height) */
+  grid-column: 1 / 2; /* Span across the first column */
+}
+
+.grid-item-c {
+  grid-row: 1 / 5;  /* Span from row 2 to row 4 (three rows) */
+  grid-column: 2 / 5; /* Span from column 2 to column 4 (three columns) */
+}
+
+.main {
+  overflow: scroll;
+  max-height: 100%;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list-item {
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 1px;
+  border-left: 0px;
+  border-style: solid;
+}
+
+.profile-picture {
+  display: block;
+  width: 75px;
+  height: 100px;
+}

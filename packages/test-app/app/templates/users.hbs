@@ -1,0 +1,9 @@
+{{page-title "Users"}}
+
+<Pagination @records={{@model}}>
+  <:list as |users|>
+    <UserList @users={{users}} />
+  </:list>
+</Pagination>
+
+{{outlet}}

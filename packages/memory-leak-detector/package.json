@@ -1,0 +1,24 @@
+{
+  "name": "memory-leak-detector",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "memory-leak-detector": "./server/index.js"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.12.10",
+    "ast-types": "^0.14.2",
+    "chrome-remote-interface": "^0.28.2",
+    "ember-cli-babel": "^7.22.1",
+    "ember-cli-htmlbars": "^5.3.1",
+    "glob": "^7.1.6",
+    "heapsnapshot": "0.0.6"
+  }
+}

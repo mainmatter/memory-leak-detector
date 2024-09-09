@@ -1,0 +1,7 @@
+<ul class="list">
+  {{#each @users as |user|}}
+    <UserItem @user={{user}} />
+    <!-- While trying to reproduce the leak, I noticed that injecting the in-viewport here doesn't cause it. -->
+    <!-- span {{in-viewport onEnter=(perform this.onEnterTask @user.id) onExit=(perform this.onEnterTask @user.id)}}></span -->
+  {{/each}}
+</ul>

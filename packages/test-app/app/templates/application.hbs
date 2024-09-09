@@ -1,0 +1,25 @@
+{{page-title "ember-test-app"}}
+
+<div class="grid-container">
+  <div class="grid-item-a">
+    <ul>
+      <li>
+
+        <LinkTo @route="index"> Home </LinkTo>
+      </li>
+      <li>
+
+        <LinkTo @route="users"> Users </LinkTo>
+      </li>
+      <li>
+
+        <LinkTo @route="leaker"> Leaker route </LinkTo>
+      </li>
+    </ul>
+  </div>
+  <div class="grid-item-c">
+    <main class="main">
+      {{outlet}}
+    </main>
+  </div>
+</div>
