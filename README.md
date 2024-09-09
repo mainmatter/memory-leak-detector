@@ -12,7 +12,8 @@ An example app can be found [here](/tree/main/packages/test-app).
 
 ### Running it
 
-- checkout the repo
+- `git clone git@github.com:mainmatter/memory-leak-detector.git`
+- `cd memory-leak-detector`
 - `pnpm install`
 - `pnpm test:memory-leak-ember`
 

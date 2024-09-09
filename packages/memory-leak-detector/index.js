@@ -1,4 +1,5 @@
 export async function detectMemoryLeak(by, value, assertions) {
+  // @TODO: Make the server configurable 
   let response = await fetch(`http://localhost:3000/detect_memory_leak`, {
     method: "POST",
     headers: {
