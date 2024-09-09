@@ -1,17 +1,17 @@
 {
   "solution": {
     "memory-leak-detector": {
-      "impact": "minor",
-      "oldVersion": "0.0.0",
-      "newVersion": "0.1.0",
+      "impact": "patch",
+      "oldVersion": "0.1.0",
+      "newVersion": "0.1.1",
       "constraints": [
         {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
+          "impact": "patch",
+          "reason": "Appears in changelog section :bug: Bug Fix"
         }
       ],
       "pkgJSONPath": "./packages/memory-leak-detector/package.json"
     }
   },
-  "description": "## Release (2024-09-09)\n\nmemory-leak-detector 0.1.0 (minor)\n\n#### :rocket: Enhancement\n* `memory-leak-detector`\n  * [#33](https://github.com/mainmatter/memory-leak-detector/pull/33) feat: initial release ([@BobrImperator](https://github.com/BobrImperator))\n\n#### :house: Internal\n* [#32](https://github.com/mainmatter/memory-leak-detector/pull/32) Prepare Release ([@github-actions[bot]](https://github.com/apps/github-actions))\n* [#31](https://github.com/mainmatter/memory-leak-detector/pull/31) Prepare Release ([@github-actions[bot]](https://github.com/apps/github-actions))\n\n#### Committers: 2\n- Bartlomiej Dudzik ([@BobrImperator](https://github.com/BobrImperator))\n- [@github-actions[bot]](https://github.com/apps/github-actions)\n"
+  "description": "## Release (2024-09-09)\n\nmemory-leak-detector 0.1.1 (patch)\n\n#### :bug: Bug Fix\n* `memory-leak-detector`\n  * [#35](https://github.com/mainmatter/memory-leak-detector/pull/35) fix: symlink readme so it appears in package ([@BobrImperator](https://github.com/BobrImperator))\n\n#### Committers: 1\n- Bartlomiej Dudzik ([@BobrImperator](https://github.com/BobrImperator))\n"
 }

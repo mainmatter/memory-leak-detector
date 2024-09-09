@@ -2,6 +2,17 @@
 
 ## Release (2024-09-09)
 
+memory-leak-detector 0.1.1 (patch)
+
+#### :bug: Bug Fix
+* `memory-leak-detector`
+  * [#35](https://github.com/mainmatter/memory-leak-detector/pull/35) fix: symlink readme so it appears in package ([@BobrImperator](https://github.com/BobrImperator))
+
+#### Committers: 1
+- Bartlomiej Dudzik ([@BobrImperator](https://github.com/BobrImperator))
+
+## Release (2024-09-09)
+
 memory-leak-detector 0.1.0 (minor)
 
 #### :rocket: Enhancement
