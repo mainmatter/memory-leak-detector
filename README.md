@@ -4,7 +4,7 @@ Memory Leak Detector is a tiny node server that exposes an HTTP API for making s
 
 It requires a path to the source code so it can scan codebase for `class`.
 
-`pnpm memory-leak-detector ./app`
+`pnpm memory-leak-detector --path ./app`
 
 ## Example app
 
@@ -22,11 +22,47 @@ An example app can be found [here](https://github.com/mainmatter/memory-leak-det
 Install the `memory-leak-detector` dependency
 
 - `pnpm add -D memory-leak-detector`
+- Edit your test runner's option to run Chrome with `--remote-debugging-port=9222` option.
+  Example Configuration for Testem.
+
+```js
+// testem.js
+"use strict";
+
+module.exports = {
+  test_page: "tests/index.html?hidepassed",
+  disable_watching: true,
+  launch_in_ci: ["Chrome"],
+  launch_in_dev: ["Chrome"],
+  browser_start_timeout: 120,
+  browser_args: {
+    Chrome: {
+      ci: [
+        // --no-sandbox is needed when running Chrome inside a container
+        process.env.CI ? "--no-sandbox" : null,
+        "--headless",
+        "--disable-dev-shm-usage",
+        "--disable-software-rasterizer",
+        "--mute-audio",
+        "--remote-debugging-port=9222",
+        "--window-size=1440,900",
+      ].filter(Boolean),
+      dev: [
+        "--disable-dev-shm-usage",
+        "--disable-software-rasterizer",
+        "--mute-audio",
+        "--remote-debugging-port=9222",
+        "--window-size=1440,900",
+      ].filter(Boolean),
+    },
+  },
+};
+```
 
 Define a script that runs a `memory-leak-detector` node server and listen, run your tests as usual, finally wait for the process results.
 
 ```sh
-pnpm memory-leak-detector ./app & pid=$!; pnpm test; wait $pid
+pnpm memory-leak-detector --path ./app & pid=$!; pnpm test; wait $pid
 ```
 
 The reason for waiting for that process' pid is that e.g. Qunit doesn't have a good way to dynamically create and run a test at the end of your test suite while we must have a way to fail the CI in case something's wrong.
@@ -35,7 +71,7 @@ For that reason `detectLeakingClasses` is meant to be used at the end only, beca
 That also means that if you don't intend to use `detectLeakingClasses`, your script should not wait for the `memory-leak-detector` to exit i.e.
 
 ```sh
-pnpm memory-leak-detector ./app & pnpm test
+pnpm memory-leak-detector --path  ./app & pnpm test
 ```
 
 ### Checking for memory leaks after test suite finishes
@@ -88,3 +124,35 @@ test("paginating back and forth", async function (assert) {
 ```
 
 ![Checking for specific class in a test](https://github.com/mainmatter/memory-leak-detector/blob/main/assets/memory_leak_2.png)
+
+## Configuration
+
+### memory-leak-detector
+
+- path: <required>, has no default value.
+- port: <optional>, defaults to 3000.
+
+### Chrome / Test runner
+
+By default a Google Chrome instance is expected to be running on address `127.0.0.1:9222`.
+In case it runs on a different address, you can provide the connection info when calling the HTTP API e.g.
+
+```js
+await detectLeakingClasses("title", document.title, {
+  host: "localhost",
+  port: 9333,
+});
+```
+
+```js
+const assertions = { MyClass: 10 };
+const results = await detectMemoryLeak(
+  "url",
+  document.location.href,
+  assertions,
+  {
+    host: "localhost",
+    port: 9333,
+  },
+);
+```
