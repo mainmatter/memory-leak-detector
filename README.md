@@ -55,6 +55,8 @@ globalThis.Testem?.afterTests(async (_config, _data, callback) => {
 });
 ```
 
+![Checking for any leaking classes](https://github.com/mainmatter/memory-leak-detector/blob/main/assets/memory_leak_1.png)
+
 This approach doesn't catch all memory-leaks as it will only detect the ones that have manipulated a window/document objects by e.g. storing references or not removed `addEventListener` calls.
 
 ### Asserting object count
@@ -84,3 +86,5 @@ test("paginating back and forth", async function (assert) {
   assert.strictEqual(currentURL(), "users");
 });
 ```
+
+![Checking for specific class in a test](https://github.com/mainmatter/memory-leak-detector/blob/main/assets/memory_leak_2.png)
