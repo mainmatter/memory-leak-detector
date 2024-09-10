@@ -1,6 +1,6 @@
 {
   "name": "memory-leak-detector",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "repository": "https://github.com/mainmatter/memory-leak-detector",
   "main": "index.js",

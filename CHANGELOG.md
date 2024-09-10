@@ -1,5 +1,20 @@
 # Changelog
 
+## Release (2024-09-10)
+
+memory-leak-detector 0.1.2 (patch)
+
+#### :bug: Bug Fix
+* `memory-leak-detector`
+  * [#38](https://github.com/mainmatter/memory-leak-detector/pull/38) chore(docs): copy README.md while publishing ([@BobrImperator](https://github.com/BobrImperator))
+
+#### :memo: Documentation
+* `memory-leak-detector`
+  * [#38](https://github.com/mainmatter/memory-leak-detector/pull/38) chore(docs): copy README.md while publishing ([@BobrImperator](https://github.com/BobrImperator))
+
+#### Committers: 1
+- Bartlomiej Dudzik ([@BobrImperator](https://github.com/BobrImperator))
+
 ## Release (2024-09-09)
 
 memory-leak-detector 0.1.1 (patch)
