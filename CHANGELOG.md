@@ -2,6 +2,21 @@
 
 ## Release (2024-09-10)
 
+memory-leak-detector 0.2.0 (minor)
+
+#### :rocket: Enhancement
+* `memory-leak-detector`, `ember-test-app`
+  * [#41](https://github.com/mainmatter/memory-leak-detector/pull/41) feat: make memory-leak-detector connection info configurable ([@BobrImperator](https://github.com/BobrImperator))
+
+#### :house: Internal
+* `ember-test-app`
+  * [#40](https://github.com/mainmatter/memory-leak-detector/pull/40) chore(ci): make CI passing ([@BobrImperator](https://github.com/BobrImperator))
+
+#### Committers: 1
+- Bartlomiej Dudzik ([@BobrImperator](https://github.com/BobrImperator))
+
+## Release (2024-09-10)
+
 memory-leak-detector 0.1.2 (patch)
 
 #### :bug: Bug Fix
