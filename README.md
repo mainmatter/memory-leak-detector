@@ -8,7 +8,7 @@ It requires a path to the source code so it can scan codebase for `class`.
 
 ## Example app
 
-An example app can be found [here](/tree/main/packages/test-app).
+An example app can be found [here](https://github.com/mainmatter/memory-leak-detector/blob/main/packages/test-app).
 
 ### Running it
 
