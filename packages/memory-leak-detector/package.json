@@ -5,6 +5,7 @@
   "repository": "https://github.com/mainmatter/memory-leak-detector",
   "main": "index.js",
   "scripts": {
+    "prepublishOnly": "cp ../../README.md .",
     "start": "node server/index.js"
   },
   "keywords": [],
