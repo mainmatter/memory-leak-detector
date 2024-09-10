@@ -1,5 +1,9 @@
-export async function detectMemoryLeak(by, value, assertions) {
-  // @TODO: Make the server configurable 
+export async function detectMemoryLeak(
+  by,
+  value,
+  assertions,
+  browserAddress = { port: 9222, host: "127.0.0.1" },
+) {
   let response = await fetch(`http://localhost:3000/detect_memory_leak`, {
     method: "POST",
     headers: {
@@ -10,6 +14,7 @@ export async function detectMemoryLeak(by, value, assertions) {
         by,
         value,
       },
+      ...browserAddress,
       assertions,
     }),
   });
@@ -18,7 +23,12 @@ export async function detectMemoryLeak(by, value, assertions) {
   return json.results;
 }
 
-export async function detectLeakingClasses(by, value) {
+export async function detectLeakingClasses(
+  by,
+  value,
+
+  browserAddress = { port: 9222, host: "127.0.0.1" },
+) {
   let response = await fetch(`http://localhost:3000/detect_leaking_classes`, {
     method: "POST",
     headers: {
@@ -29,6 +39,7 @@ export async function detectLeakingClasses(by, value) {
         by,
         value,
       },
+      ...browserAddress,
     }),
   });
   let json = await response.json();

@@ -23,7 +23,7 @@
     "start": "ember serve",
     "test": "concurrently \"pnpm:lint\" \"pnpm:test:*\" --names \"lint,test:\"",
     "test:ember": "ember test",
-    "start:memory-leak-detector": "memory-leak-detector ./app/",
+    "start:memory-leak-detector": "memory-leak-detector --path ./app/",
     "test:memory-leak": "ember test --filter MEMORY_LEAK",
     "test:users": "ember test --filter Users",
     "test": "ember test --filter !MEMORY_LEAK"

@@ -6,8 +6,22 @@ const inventoryClasses = require("./inventory-classes.js");
 const express = require("express");
 const cors = require("cors");
 
+const { program } = require("commander");
+
 function main() {
-  const [, , sourceDirectory] = process.argv;
+  program
+    .requiredOption(
+      "--path <path>",
+      "A path to the codebase in order to scan any class declaration for automated leak detection.",
+    )
+    .option(
+      "--port <port>",
+      "A port number that `memory-leak-detector` should listen to.",
+      3000,
+    );
+  program.parse();
+
+  const cliOptions = program.opts();
   const app = express();
 
   app.use(cors());
@@ -16,8 +30,6 @@ function main() {
   app.post(
     "/detect_memory_leak",
     handleDetectMemoryLinkRequest({
-      port: 9222,
-      host: "127.0.0.1",
       classes: [],
       writeSnapshot: false,
     }),
@@ -25,18 +37,16 @@ function main() {
   app.post(
     "/detect_leaking_classes",
     checkLeakingClasses({
-      port: 9222,
-      host: "127.0.0.1",
       allowedToLeak: ["App"],
-      classes: inventoryClasses(sourceDirectory),
+      classes: inventoryClasses(cliOptions.path),
       writeSnapshot: false,
     }),
   );
 
-  app.post("/close", (_req, _res) => process.exit(0))
+  app.post("/close", (_req, _res) => process.exit(0));
 
-  app.listen(3000, () => {
-    console.log("Memory Leak Detector listening on port :3000");
+  app.listen(cliOptions.port, () => {
+    console.log(`Memory Leak Detector listening on port :${cliOptions.port}`);
   });
 }
 
