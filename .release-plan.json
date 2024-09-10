@@ -1,21 +1,17 @@
 {
   "solution": {
     "memory-leak-detector": {
-      "impact": "patch",
-      "oldVersion": "0.1.1",
-      "newVersion": "0.1.2",
+      "impact": "minor",
+      "oldVersion": "0.1.2",
+      "newVersion": "0.2.0",
       "constraints": [
         {
-          "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :memo: Documentation"
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
         }
       ],
       "pkgJSONPath": "./packages/memory-leak-detector/package.json"
     }
   },
-  "description": "## Release (2024-09-10)\n\nmemory-leak-detector 0.1.2 (patch)\n\n#### :bug: Bug Fix\n* `memory-leak-detector`\n  * [#38](https://github.com/mainmatter/memory-leak-detector/pull/38) chore(docs): copy README.md while publishing ([@BobrImperator](https://github.com/BobrImperator))\n\n#### :memo: Documentation\n* `memory-leak-detector`\n  * [#38](https://github.com/mainmatter/memory-leak-detector/pull/38) chore(docs): copy README.md while publishing ([@BobrImperator](https://github.com/BobrImperator))\n\n#### Committers: 1\n- Bartlomiej Dudzik ([@BobrImperator](https://github.com/BobrImperator))\n"
+  "description": "## Release (2024-09-10)\n\nmemory-leak-detector 0.2.0 (minor)\n\n#### :rocket: Enhancement\n* `memory-leak-detector`, `ember-test-app`\n  * [#41](https://github.com/mainmatter/memory-leak-detector/pull/41) feat: make memory-leak-detector connection info configurable ([@BobrImperator](https://github.com/BobrImperator))\n\n#### :house: Internal\n* `ember-test-app`\n  * [#40](https://github.com/mainmatter/memory-leak-detector/pull/40) chore(ci): make CI passing ([@BobrImperator](https://github.com/BobrImperator))\n\n#### Committers: 1\n- Bartlomiej Dudzik ([@BobrImperator](https://github.com/BobrImperator))\n"
 }
