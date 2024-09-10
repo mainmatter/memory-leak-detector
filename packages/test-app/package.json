@@ -26,7 +26,7 @@
     "start:memory-leak-detector": "memory-leak-detector ./app/",
     "test:memory-leak": "ember test --filter MEMORY_LEAK",
     "test:users": "ember test --filter Users",
-    "test": "ember test"
+    "test": "ember test --filter !MEMORY_LEAK"
   },
   "devDependencies": {
     "@babel/core": "7.25.2",

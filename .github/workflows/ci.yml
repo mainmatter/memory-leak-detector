@@ -7,8 +7,8 @@ on:
   pull_request: {}
 
 jobs:
-  test-ember-memory-leaks:
-    name: Test Emberfest2024
+  test-detect-leaking-classes:
+    name: Test detectLeakingClasses
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -28,5 +28,32 @@ jobs:
       - name: install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: tests
-        run: pnpm test:memory-leak-ember
+      - run: |
+          set +e
+          pnpm -F ember-test-app start:memory-leak-detector & pid=$!
+          pnpm -F ember-test-app test:memory-leak
+          wait $pid
+          if [ $? -eq 1 ]; then exit 0; else exit $?; fi
+
+  test-detect-memory-leak:
+    name: Test detectMemoryLeak
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node_version: 20
+      - uses: pnpm/action-setup@v4
+      - uses: actions/cache@v4
+        with:
+          path: "**/node_modules"
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      - name: install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - run: pnpm -F ember-test-app start:memory-leak-detector & pid=$!; pnpm -F ember-test-app test; wait $pid
