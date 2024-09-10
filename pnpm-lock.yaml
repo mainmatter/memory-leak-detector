@@ -24,8 +24,8 @@ importers:
         specifier: ^0.14.2
         version: 0.14.2
       chrome-remote-interface:
-        specifier: ^0.28.2
-        version: 0.28.2
+        specifier: ^0.33.0
+        version: 0.33.2
       commander:
         specifier: ^12.1.0
         version: 12.1.0
@@ -2368,8 +2368,8 @@ packages:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
     engines: {node: '>=10'}
 
-  chrome-remote-interface@0.28.2:
-    resolution: {integrity: sha512-F7mjof7rWvRNsJqhVXuiFU/HWySCxTA9tzpLxUJxVfdLkljwFJ1aMp08AnwXRmmP7r12/doTDOMwaNhFCJsacw==}
+  chrome-remote-interface@0.33.2:
+    resolution: {integrity: sha512-wvm9cOeBTrb218EC+6DteGt92iXr2iY0+XJP30f15JVDhqvWvJEVACh9GvUm8b9Yd8bxQivaLSb8k7mgrbyomQ==}
     hasBin: true
 
   chrome-trace-event@1.0.4:
@@ -10104,7 +10104,7 @@ snapshots:
 
   chownr@2.0.0: {}
 
-  chrome-remote-interface@0.28.2:
+  chrome-remote-interface@0.33.2:
     dependencies:
       commander: 2.11.0
       ws: 7.5.10
