@@ -20,7 +20,7 @@
     "chrome-remote-interface": "^0.28.2",
     "commander": "^12.1.0",
     "ember-cli-babel": "^8.0.0",
-    "ember-cli-htmlbars": "^5.3.1",
+    "ember-cli-htmlbars": "^6.0.0",
     "glob": "^11.0.0",
     "heapsnapshot": "0.0.6"
   }
