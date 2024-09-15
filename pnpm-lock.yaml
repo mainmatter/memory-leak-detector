@@ -30,8 +30,8 @@ importers:
         specifier: ^12.1.0
         version: 12.1.0
       ember-cli-babel:
-        specifier: ^7.22.1
-        version: 7.26.11
+        specifier: ^8.0.0
+        version: 8.2.0(@babel/core@7.25.2)
       ember-cli-htmlbars:
         specifier: ^5.3.1
         version: 5.7.2
