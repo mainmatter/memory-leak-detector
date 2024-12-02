@@ -1,5 +1,10 @@
 # Changelog
 
+
+
+
+
+
 ## Release (2024-09-10)
 
 memory-leak-detector 0.2.0 (minor)
