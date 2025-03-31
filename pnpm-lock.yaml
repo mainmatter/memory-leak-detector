@@ -154,8 +154,8 @@ importers:
         specifier: 5.12.0
         version: 5.12.0(@glimmer/component@1.1.2(@babel/core@7.25.8))(rsvp@4.8.5)(webpack@5.95.0)
       ember-template-lint:
-        specifier: 7.0.1
-        version: 7.0.1(@babel/core@7.25.8)
+        specifier: 7.0.2
+        version: 7.0.2(@babel/core@7.25.8)
       ember-welcome-page:
         specifier: 7.0.2
         version: 7.0.2
@@ -172,8 +172,8 @@ importers:
         specifier: 17.11.1
         version: 17.11.1(eslint@9.12.0)
       eslint-plugin-prettier:
-        specifier: 5.2.4
-        version: 5.2.4(@types/eslint@8.56.12)(eslint-config-prettier@10.0.3(eslint@9.12.0))(eslint@9.12.0)(prettier@3.3.3)
+        specifier: 5.2.5
+        version: 5.2.5(@types/eslint@8.56.12)(eslint-config-prettier@10.0.3(eslint@9.12.0))(eslint@9.12.0)(prettier@3.3.3)
       eslint-plugin-qunit:
         specifier: 8.1.2
         version: 8.1.2(eslint@9.12.0)
@@ -3308,8 +3308,8 @@ packages:
     peerDependencies:
       '@glimmer/component': ^1.1.2
 
-  ember-template-lint@7.0.1:
-    resolution: {integrity: sha512-rFGrioqtoHyWGig6PsURQYL797Hj1u9Wbn8ZyTO3H0NUNrRgPOX+2Gu9uTrmnf+KWry/2GB+yok6OY7mVSygIA==}
+  ember-template-lint@7.0.2:
+    resolution: {integrity: sha512-3YhHVLqD48GK1M9ZXf3L+eH2800FYCtvENCLzazgiAlU50towMKCV9Dy+lF9XlXzQZSJZzxR16IGCgv8rkiesw==}
     engines: {node: ^18.18.0 || >= 20.9.0}
     hasBin: true
 
@@ -3473,13 +3473,13 @@ packages:
     peerDependencies:
       eslint: '>=8.23.0'
 
-  eslint-plugin-prettier@5.2.4:
-    resolution: {integrity: sha512-SFtuYmnhwYCtuCDTKPoK+CEzCnEgKTU2qTLwoCxvrC0MFBTIXo1i6hDYOI4cwHaE5GZtlWmTN3YfucYi7KJwPw==}
+  eslint-plugin-prettier@5.2.5:
+    resolution: {integrity: sha512-IKKP8R87pJyMl7WWamLgPkloB16dagPIdd2FjBDbyRYPKo93wS/NbCOPh6gH+ieNLC+XZrhJt/kWj0PS/DFdmg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       '@types/eslint': '>=8.0.0'
       eslint: '>=8.0.0'
-      eslint-config-prettier: '*'
+      eslint-config-prettier: '>= 7.0.0 <10.0.0 || >=10.1.0'
       prettier: '>=3.0.0'
     peerDependenciesMeta:
       '@types/eslint':
@@ -9347,7 +9347,7 @@ snapshots:
       fs-extra: 9.1.0
       proper-lockfile: 4.1.2
       slash: 3.0.0
-      tslib: 2.7.0
+      tslib: 2.8.1
       upath: 2.0.1
 
   '@manypkg/find-root@2.2.3':
@@ -11153,7 +11153,7 @@ snapshots:
   dot-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   dot-prop@5.3.0:
     dependencies:
@@ -11868,7 +11868,7 @@ snapshots:
       - supports-color
       - webpack
 
-  ember-template-lint@7.0.1(@babel/core@7.25.8):
+  ember-template-lint@7.0.2(@babel/core@7.25.8):
     dependencies:
       '@babel/generator': 7.26.9
       '@babel/parser': 7.26.9
@@ -12125,7 +12125,7 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.6.3
 
-  eslint-plugin-prettier@5.2.4(@types/eslint@8.56.12)(eslint-config-prettier@10.0.3(eslint@9.12.0))(eslint@9.12.0)(prettier@3.3.3):
+  eslint-plugin-prettier@5.2.5(@types/eslint@8.56.12)(eslint-config-prettier@10.0.3(eslint@9.12.0))(eslint@9.12.0)(prettier@3.3.3):
     dependencies:
       eslint: 9.12.0
       prettier: 3.3.3
@@ -13661,7 +13661,7 @@ snapshots:
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   lru-cache@10.4.3: {}
 
@@ -13974,7 +13974,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   node-fetch@2.7.0(encoding@0.1.13):
     dependencies:
