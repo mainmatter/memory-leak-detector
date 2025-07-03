@@ -55,7 +55,7 @@ importers:
         version: 4.0.2(@babel/core@7.28.0)(@glimmer/tracking@1.1.2)(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.0))(rsvp@4.8.5)(webpack@5.99.9))
       ember-in-viewport:
         specifier: ^4.1.0
-        version: 4.1.0(@babel/core@7.28.0)(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.0))(rsvp@4.8.5)(webpack@5.99.9))(webpack@5.99.9)
+        version: 4.1.0(@babel/core@7.28.0)(webpack@5.99.9)
       ember-scroll-modifiers:
         specifier: ^7.3.0
         version: 7.3.0(@babel/core@7.28.0)(@ember/test-helpers@4.0.5(@babel/core@7.28.0)(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.0))(rsvp@4.8.5)(webpack@5.99.9)))(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.0))(rsvp@4.8.5)(webpack@5.99.9))(webpack@5.99.9)
@@ -139,8 +139,8 @@ importers:
         specifier: 2.1.2
         version: 2.1.2(@babel/core@7.28.0)
       ember-modifier:
-        specifier: 4.2.0
-        version: 4.2.0(@babel/core@7.28.0)(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.0))(rsvp@4.8.5)(webpack@5.99.9))
+        specifier: 4.2.2
+        version: 4.2.2(@babel/core@7.28.0)
       ember-page-title:
         specifier: 8.2.4
         version: 8.2.4(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.0))(rsvp@4.8.5)(webpack@5.99.9))
@@ -3300,13 +3300,8 @@ packages:
     resolution: {integrity: sha512-CYR+U/wRxLbrfYN3dh+0Tb6mFaxJKfdyz+wNql6cqTrA0BBi9k6J3AaKXj273TqvEpyyXegQFFkZEiuZdYtgJw==}
     engines: {node: 6.* || 8.* || >= 10.*}
 
-  ember-modifier@4.2.0:
-    resolution: {integrity: sha512-BJ48eTEGxD8J7+lofwVmee7xDgNDgpr5dd6+MSu4gk+I6xb35099RMNorXY5hjjwMJEyi/IRR6Yn3M7iJMz8Zw==}
-    peerDependencies:
-      ember-source: ^3.24 || >=4.0
-    peerDependenciesMeta:
-      ember-source:
-        optional: true
+  ember-modifier@4.2.2:
+    resolution: {integrity: sha512-pPYBAGyczX0hedGWQFQOEiL9s45KS9efKxJxUQkMLjQyh+1Uef1mcmAGsdw2KmvNupITkE/nXxmVO1kZ9tt3ag==}
 
   ember-page-title@8.2.4:
     resolution: {integrity: sha512-ZZ912IRItIEfD5+35w65DT9TmqppK+suXJeaJenD5OSuvujUnYl6KxBpyAbfjw4mYtURwJO/TmSe+4GGJbsJ0w==}
@@ -11986,20 +11981,19 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-in-viewport@4.1.0(@babel/core@7.28.0)(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.0))(rsvp@4.8.5)(webpack@5.99.9))(webpack@5.99.9):
+  ember-in-viewport@4.1.0(@babel/core@7.28.0)(webpack@5.99.9):
     dependencies:
       '@embroider/macros': 1.16.6
       ember-auto-import: 2.10.0(webpack@5.99.9)
       ember-cli-babel: 7.26.11
       ember-destroyable-polyfill: 2.0.3(@babel/core@7.28.0)
-      ember-modifier: 4.2.0(@babel/core@7.28.0)(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.0))(rsvp@4.8.5)(webpack@5.99.9))
+      ember-modifier: 4.2.2(@babel/core@7.28.0)
       fast-deep-equal: 2.0.1
       intersection-observer-admin: 0.3.2
       raf-pool: 0.1.4
     transitivePeerDependencies:
       - '@babel/core'
       - '@glint/template'
-      - ember-source
       - supports-color
       - webpack
 
@@ -12011,14 +12005,12 @@ snapshots:
       - '@babel/core'
       - supports-color
 
-  ember-modifier@4.2.0(@babel/core@7.28.0)(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.0))(rsvp@4.8.5)(webpack@5.99.9)):
+  ember-modifier@4.2.2(@babel/core@7.28.0):
     dependencies:
-      '@embroider/addon-shim': 1.8.9
+      '@embroider/addon-shim': 1.9.0
       decorator-transforms: 2.0.0(@babel/core@7.28.0)
       ember-cli-normalize-entity-name: 1.0.0
       ember-cli-string-utils: 1.1.0
-    optionalDependencies:
-      ember-source: 5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.0))(rsvp@4.8.5)(webpack@5.99.9)
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -12065,7 +12057,7 @@ snapshots:
       ember-auto-import: 2.10.0(webpack@5.99.9)
       ember-cli-babel: 7.26.11
       ember-cli-htmlbars: 6.3.0
-      ember-modifier: 4.2.0(@babel/core@7.28.0)(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.0))(rsvp@4.8.5)(webpack@5.99.9))
+      ember-modifier: 4.2.2(@babel/core@7.28.0)
       ember-source: 5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.0))(rsvp@4.8.5)(webpack@5.99.9)
       intersection-observer-admin: 0.3.2
     optionalDependencies:
