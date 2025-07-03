@@ -1,3 +1,7 @@
 {
-  "extends": ["github>mainmatter/renovate-config:ember-addon.json5"]
+  "extends": [
+    "github>mainmatter/renovate-config:ember-addon.json5",
+    "github>mainmatter/renovate-config:automerge-dev.json5",
+    ":pinOnlyDevDependencies"
+  ]
 }
