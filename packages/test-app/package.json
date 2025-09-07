@@ -29,8 +29,8 @@
     "test": "ember test --filter !MEMORY_LEAK"
   },
   "devDependencies": {
-    "@babel/core": "7.28.0",
-    "@babel/eslint-parser": "7.28.0",
+    "@babel/core": "7.28.4",
+    "@babel/eslint-parser": "7.28.4",
     "@babel/plugin-proposal-decorators": "7.28.0",
     "@ember/optional-features": "2.2.0",
     "@ember/string": "4.0.1",
@@ -41,7 +41,7 @@
     "@glimmer/component": "1.1.2",
     "@glimmer/tracking": "1.1.2",
     "broccoli-asset-rev": "3.0.0",
-    "concurrently": "9.2.0",
+    "concurrently": "9.2.1",
     "ember-auto-import": "2.10.0",
     "ember-cli": "5.12.0",
     "ember-cli-app-version": "7.0.0",
@@ -58,13 +58,13 @@
     "ember-qunit": "8.1.1",
     "ember-resolver": "13.1.1",
     "ember-source": "5.12.0",
-    "ember-template-lint": "7.9.1",
+    "ember-template-lint": "7.9.3",
     "ember-welcome-page": "7.0.2",
     "eslint": "9.32.0",
     "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-ember": "12.7.0",
+    "eslint-plugin-ember": "12.7.3",
     "eslint-plugin-n": "17.21.3",
-    "eslint-plugin-prettier": "5.5.3",
+    "eslint-plugin-prettier": "5.5.4",
     "eslint-plugin-qunit": "8.2.5",
     "loader.js": "4.7.0",
     "memory-leak-detector": "workspace:*",
@@ -75,7 +75,7 @@
     "stylelint-config-standard": "38.0.0",
     "stylelint-prettier": "5.0.3",
     "tracked-built-ins": "3.4.0",
-    "webpack": "5.101.0"
+    "webpack": "5.101.3"
   },
   "engines": {
     "node": ">= 18"
