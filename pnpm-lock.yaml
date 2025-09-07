@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  intersection-observer-admin: 0.3.2
+  intersection-observer-admin: 0.3.4
 
 importers:
 
@@ -4278,8 +4278,8 @@ packages:
     resolution: {integrity: sha512-NGnrKwXzSms2qUUih/ILZ5JBqNTSa1+ZmP6flaIp6KmSElgE9qdndzS3cqjrDovwFdmwsGsLdeFgB6suw+1e9g==}
     engines: {node: '>= 0.4'}
 
-  intersection-observer-admin@0.3.2:
-    resolution: {integrity: sha512-kJEcF9iVRuI4thXiJd28UzFDgvFHBNUgwkKA4F0bPMmRdzc+1Eq7/J13n2gSgfZ5tsVxb+wJOV7k3DXcsc7D6Q==}
+  intersection-observer-admin@0.3.4:
+    resolution: {integrity: sha512-L9W5vBSu7W5Dx/RcbWcErNwoke3xWIAD2SADbmAZnsF9XL667keuKgaqnuwTY4XU9UwhzXref5tnNF5ZLTIQ3w==}
 
   invert-kv@3.0.1:
     resolution: {integrity: sha512-CYdFeFexxhv/Bcny+Q0BfOV+ltRlJcd4BBZBYFX/O0u4npJrgZtIcjokegtiSMAvlMTJ+Koq0GBCc//3bueQxw==}
@@ -11874,7 +11874,7 @@ snapshots:
       ember-destroyable-polyfill: 2.0.3(@babel/core@7.28.4)
       ember-modifier: 4.2.2(@babel/core@7.28.4)
       fast-deep-equal: 2.0.1
-      intersection-observer-admin: 0.3.2
+      intersection-observer-admin: 0.3.4
       raf-pool: 0.1.4
     transitivePeerDependencies:
       - '@babel/core'
@@ -11944,7 +11944,7 @@ snapshots:
       ember-cli-htmlbars: 6.3.0
       ember-modifier: 4.2.2(@babel/core@7.28.4)
       ember-source: 5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.4))(rsvp@4.8.5)(webpack@5.101.3)
-      intersection-observer-admin: 0.3.2
+      intersection-observer-admin: 0.3.4
     optionalDependencies:
       '@ember/test-helpers': 4.0.5(@babel/core@7.28.4)(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.4))(rsvp@4.8.5)(webpack@5.101.3))
     transitivePeerDependencies:
@@ -13322,7 +13322,7 @@ snapshots:
       hasown: 2.0.2
       side-channel: 1.0.6
 
-  intersection-observer-admin@0.3.2: {}
+  intersection-observer-admin@0.3.4: {}
 
   invert-kv@3.0.1: {}
 
