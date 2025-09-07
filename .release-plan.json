@@ -1,17 +1,8 @@
 {
   "solution": {
     "memory-leak-detector": {
-      "impact": "minor",
-      "oldVersion": "0.1.2",
-      "newVersion": "0.2.0",
-      "constraints": [
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        }
-      ],
-      "pkgJSONPath": "./packages/memory-leak-detector/package.json"
+      "oldVersion": "0.2.0"
     }
   },
-  "description": "## Release (2024-09-10)\n\nmemory-leak-detector 0.2.0 (minor)\n\n#### :rocket: Enhancement\n* `memory-leak-detector`, `ember-test-app`\n  * [#41](https://github.com/mainmatter/memory-leak-detector/pull/41) feat: make memory-leak-detector connection info configurable ([@BobrImperator](https://github.com/BobrImperator))\n\n#### :house: Internal\n* `ember-test-app`\n  * [#40](https://github.com/mainmatter/memory-leak-detector/pull/40) chore(ci): make CI passing ([@BobrImperator](https://github.com/BobrImperator))\n\n#### Committers: 1\n- Bartlomiej Dudzik ([@BobrImperator](https://github.com/BobrImperator))\n"
+  "description": "\n\n\n\n"
 }
